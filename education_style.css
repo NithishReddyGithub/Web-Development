@@ -79,7 +79,7 @@ nav ul li a:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
     bottom:-7px;
-    position:fixed;
+    position:relative;
 }
 
 section div h2{

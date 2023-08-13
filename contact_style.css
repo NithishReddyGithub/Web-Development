@@ -51,7 +51,7 @@ nav ul li a:hover{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
-    position:fixed;
+    position:relative;
     bottom:-7px;
 }
 
