@@ -1,0 +1,119 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    color: rgb(46, 28, 4);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #080808;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+nav ul li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: burlywood;
+    transition: all .4s ease-in-out;
+}
+
+.active {
+    background-color: #04AA6D;
+  }
+
+.two{
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    position:fixed;
+    bottom:-7px;
+}
+
+.containerTwo{
+    text-align: center;
+    color: black;
+    display: inline-block;
+}
+
+.one div h2{
+    text-align: center;
+    color: black;
+}
+
+.social {
+    padding-top: 10%;
+    margin: 5px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.social a{
+    font-size: 30px;
+    color: #F4FFFE;
+    border-style: groove;
+    border-color: grey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    display: inline-block
+}
+
+.social a:hover {
+    background-color: darkred;
+    color: white;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}
+
+#LinkedIn{
+    background-color: blue;
+}
+
+#youtube{
+    background-color: red;
+}
+
+#twitter{
+    background-color: black;
+}
+
+#facebook{
+    background-color: blueviolet;
+}
+
+#instagram{
+    background-color: rgb(11, 11, 66);
+}
+
+#github{
+    background-color: black;
+}

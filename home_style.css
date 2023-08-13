@@ -1,0 +1,116 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    color: rgb(46, 28, 4);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+nav ul li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: burlywood;
+    transition: all .4s ease-in-out;
+}
+
+.active {
+    background-color: #04AA6D;
+  }
+
+/* .one{
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+.two{
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    position:fixed;
+    bottom:-7px;
+}
+
+/* .containerOne{
+    border: 1px solid burlywood;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.5);
+    color: white;
+    display: inline-block;
+} */
+
+.containerTwo{
+    text-align: center;
+    color: black;
+    display: inline-block;
+}
+
+.one {
+    min-height: 5em;
+    padding: 1em 4em;
+    font: 1em/150% sans-serif;
+    position: relative;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.5);
+    color: rgb(14, 15, 14);
+}
+
+.one div h2{
+    color: black;
+}
+  
+.one::before,
+.one::after {
+position: absolute;
+height: 3rem;
+color: black;
+font:
+    6rem/100% Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+}
+
+.one::before {
+content: "“";
+top: 0.3rem;
+left: 0.9rem;
+}
+
+.one::after {
+content: "”";
+bottom: 0.3rem;
+right: 0.8rem;
+}
