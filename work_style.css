@@ -86,3 +86,28 @@ section div h2{
     text-align: center;
     color: rgb(20, 8, 8);
 }
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+/* Mobile */
+nav {
+    padding: 14px;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    nav {
+        padding: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    nav {
+        padding: 24px;
+    }
+}
