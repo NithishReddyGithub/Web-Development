@@ -1,0 +1,27 @@
+docker : DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+At line:1 char:1
++ docker build -t my-profile . 2>&1 | tee build.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (DEPRECATED: The...future release.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  2.542MB
+
+Step 1/4 : FROM nginx:alpine
+ ---> 41523187cf7d
+Step 2/4 : COPY . /usr/share/nginx/html/
+ ---> 361e48749d9f
+Step 3/4 : EXPOSE 80
+ ---> Running in 0eb5aa04b2f0
+ ---> Removed intermediate container 0eb5aa04b2f0
+ ---> d32798571212
+Step 4/4 : CMD [ "nginx", "-g", "daemon off;" ]
+ ---> Running in ad0d6f2f7e98
+ ---> Removed intermediate container ad0d6f2f7e98
+ ---> 90aa7e7fed3c
+Successfully built 90aa7e7fed3c
+Successfully tagged my-profile:latest
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
