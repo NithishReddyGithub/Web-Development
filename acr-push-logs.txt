@@ -1,0 +1,67 @@
+PS E:\E_Downloads\mywebpage\Web-Development> az acr login -n nithishacrm3wx2
+Login Succeeded
+PS E:\E_Downloads\mywebpage\Web-Development> docker push nithishacrm3wx2/my-profile:latest
+The push refers to repository [docker.io/nithishacrm3wx2/my-profile]
+tag does not exist: nithishacrm3wx2/my-profile:latest
+PS E:\E_Downloads\mywebpage\Web-Development> docker tag my-profile nithishacrm3wx2/my-profile:latest 
+PS E:\E_Downloads\mywebpage\Web-Development> docker push nithishacrm3wx2/my-profile:latest
+The push refers to repository [docker.io/nithishacrm3wx2/my-profile]
+471412c08d15: Waiting
+e351ee5ec3d4: Waiting
+e10e486de1ab: Waiting
+da9db072f522: Waiting
+af9c0e53c5a4: Waiting
+fbbf7d28be71: Waiting
+server message: insufficient_scope: authorization failed
+PS E:\E_Downloads\mywebpage\Web-Development> terraform output acr_login_server
+╷
+│ Warning: No outputs found
+│
+│ The state file either has no outputs defined, or all the defined outputs are empty. Please define an output in your        
+│ configuration with the `output` keyword and run `terraform refresh` for it to become available. If you are using
+│ interpolation, please verify the interpolated value is not empty. You can use the `terraform console` command to assist.   
+╵
+PS E:\E_Downloads\mywebpage\Web-Development> cd ..
+PS E:\E_Downloads\mywebpage> cd ..
+PS E:\E_Downloads> cd .\terrafrom_AKS_deployment\
+PS E:\E_Downloads\terrafrom_AKS_deployment> ls
+
+
+    Directory: E:\E_Downloads\terrafrom_AKS_deployment
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        14-08-2025     11:56                .terraform
+-a----        14-08-2025     11:59             92 .gitignore
+-a----        14-08-2025     10:24           2261 .terraform.lock.hcl
+-a----        14-08-2025     13:18            407 acr.tf
+-a----        14-08-2025     12:12           1767 aks-terraform-script.tf
+-a----        14-08-2025     11:55            251 backend.tf
+-a----        14-08-2025     13:19            875 outputs.tf
+-a----        14-08-2025     12:12             79 providers.tf
+-a----        14-08-2025     12:10           2301 README.md
+-a----        14-08-2025     13:22           2672 terraform-apply.log
+-a----        14-08-2025     13:21           6944 terraform-plan.log
+-a----        14-08-2025     11:56              0 terraform.tfstate
+-a----        14-08-2025     11:56          32689 terraform.tfstate.backup
+-a----        14-08-2025     10:53            178 terraform.tfvars
+-a----        14-08-2025     13:21          36874 tfplan
+-a----        14-08-2025     13:18            799 variables.tf
+
+
+PS E:\E_Downloads\terrafrom_AKS_deployment> terraform output acr_login_server
+"nithishacrm3wx2.azurecr.io"
+PS E:\E_Downloads\terrafrom_AKS_deployment> docker tag my-profile nithishacrm3wx2.azurecr.io/my-profile:latest
+PS E:\E_Downloads\terrafrom_AKS_deployment> docker push nithishacrm3wx2.azurecr.io/my-profile:latest
+The push refers to repository [nithishacrm3wx2.azurecr.io/my-profile]
+fbbf7d28be71: Pushed 
+471412c08d15: Pushed 
+a2eb5282fbec: Pushed
+da9db072f522: Pushed
+af9c0e53c5a4: Pushed
+f61e852f1eee: Pushed
+b2eb2b8af93a: Pushed
+e351ee5ec3d4: Pushed
+e10e486de1ab: Pushed
+latest: digest: sha256:90aa7e7fed3c15e7a6fef537
