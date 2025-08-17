@@ -49,4 +49,4 @@ az acr repository list --name <acr_name> --output table
 
 Navigate to **Container Registry → Repositories** and confirm that the image is available.
 
-📷 - ![Image in Azure Container Registry](.acr-image.png)
+📷 - ![Image in Azure Container Registry](./acr-image.png)
